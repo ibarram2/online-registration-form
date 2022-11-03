@@ -24,43 +24,61 @@
     </div>
     <section class="mid-sec">
         <form action="/index.html" method="post">
-            <h2>Contact Information</h2>
-            <label for="fname">Full Name</label>
-            <input type="text" id="fname" name="full_name">
+                      
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="full_name" placeholder="Required">
 
-            <label for="email">Full Name</label>
-            <input type="email" id="email" name="email_address">
+                <label for="email">email address</label>
+                <input type="email" id="email" name="email_address" placeholder="Required">
 
-            <label for="phone">Full Name</label>
-            <input type="number" id="phone" name="phone_number">
+                <label for="phone">phone number</label>
+                <input type="number" id="phone" name="phone_number">
 
-            <label for="address">Full Name</label>
-            <input type="text" id="address" name="street_address">
+                <label for="address">street address</label>
+                <input type="text" id="address" name="street_address">
 
-            <label for="city">Full Name</label>
-            <input type="text" id="city" name="city_name">
+                <label for="city">city</label>
+                <input type="text" id="city" name="city_name">
 
-            <label for="state">Full Name</label>
-            <input type="option" id="state" name="state_name">
+                <label for="state">state</label>
+                <input type="option" id="state" name="state_name">
 
-            <label for="zip">Full Name</label>
-            <input type="number" id="zip" name="postal_code">
+                <label for="zip">zip code</label>
+                <input type="number" id="zip" name="postal_code">
+            </fieldset>
+
         </form>
+
     </section>
+
     <section class="bot-sec">
         <form action="/index.html" method="post">
-            <h2>newsletter</h2>
-            <label>select the newletters you would like to receive</label>
-            <input type="checkbox" id="subject" name="subject_type">
 
-            <label>Newsletter format</label>
-            <input type="radio" id="format" name="format">
+            <fieldset>
+                <legend>newsletter</legend>
 
-            <label for="topics">other topics you'd like to hear about</label>
-            <input type="text" id="topics" name="topics">
+                
+                <label>select the newletters you would like to receive</label>
+                <input type="checkbox" id="html" name="subject_type">
+                <label for="html">html news</label>
+                <input type="checkbox" id="css" name="subject_type">
+                <label for="css">css news</label>
+                <input type="checkbox" id="javascript" name="subject_type">
+                <label for="javascript">javascript news</label>
 
-            <button type="submit">Sign Up</button>
-            <h3>copyright the code review</h3>
+                <label>Newsletter format</label>
+                <input type="radio" id="format" name="format">
+
+                <label for="topics">other topics you'd like to hear about</label>
+                <textarea id="topics" name="topics"></textarea>
+
+                <button type="submit">sign up</button>
+                <h3>copyright the code review</h3>
+
+            </fieldset>
+
         </form>
     </section>
 
