@@ -6,21 +6,52 @@
 body {
     margin: 0 auto;
 }
+
 a{
     text-decoration: none;
 }
 
+.wrapper {
+    width: 100%;
+    flex-direction: column;
+}
+#banner {
+    background-color: aqua;
+    width: 100%;
+}
+.publication {
+    margin: 40px auto;
+}
+
+.top-sec {
+    flex-direction: column;
+    
+}
+input {
+    width: 90%;
+    margin: 0 5% 0;
+}
+.top-sec {
+    margin: auto;
+}
+h1,
+p {
+    margin: auto;
+}
 
 /*-----------------------------------------------------------------
 Flex Containers
 ------------------------------------------------------------------*/
 
 
+.wrapper,
+#banner,
+.top-sec,
+.mid-sec,
+.bot-sec {
+    display: flex;
+}
+
 /*-----------------------------------------------------------------
 Media Queries (768)
-------------------------------------------------------------------*/
-
-
-/*-----------------------------------------------------------------
-Media Queries (1024)
 ------------------------------------------------------------------*/

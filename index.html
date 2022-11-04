@@ -25,29 +25,44 @@
     <section class="mid-sec">
         <form action="/index.html" method="post">
                       
-            <fieldset>
+            <!--<fieldset>-->
                 <legend>Contact Information</legend>
+                <br>
                 <label for="fname">Full Name</label>
+                <br>
                 <input type="text" id="fname" name="full_name" placeholder="Required">
-
+                <br>
                 <label for="email">email address</label>
+                <br>
                 <input type="email" id="email" name="email_address" placeholder="Required">
-
+                <br>
                 <label for="phone">phone number</label>
+                <br>
                 <input type="number" id="phone" name="phone_number">
-
+                <br>
                 <label for="address">street address</label>
+                <br>
                 <input type="text" id="address" name="street_address">
-
+                <br>
                 <label for="city">city</label>
+                <br>
                 <input type="text" id="city" name="city_name">
-
+                <br>
                 <label for="state">state</label>
-                <input type="option" id="state" name="state_name">
-
+                <br>
+                <select id="state" name="state_name" placeholder="Select State">
+                    <optgroup label="select state">
+                        <option selected disabled hidden value="california">Select State</option>
+                        <option value="california">California</option>
+                        <option value="florida">Florida</option>
+                        <option value="washington">Washington</option>
+                    </optgroup>
+                </select>
+                <br>
                 <label for="zip">zip code</label>
+                <br>
                 <input type="number" id="zip" name="postal_code">
-            </fieldset>
+           <!--</fieldset>-->
 
         </form>
 
@@ -56,28 +71,36 @@
     <section class="bot-sec">
         <form action="/index.html" method="post">
 
-            <fieldset>
+           <!--- <fieldset>-->
                 <legend>newsletter</legend>
 
                 
                 <label>select the newletters you would like to receive</label>
+                <br>
                 <input type="checkbox" id="html" name="subject_type">
+                <br>
                 <label for="html">html news</label>
+                <br>
                 <input type="checkbox" id="css" name="subject_type">
+                <br>
                 <label for="css">css news</label>
+                <br>
                 <input type="checkbox" id="javascript" name="subject_type">
+                <br>
                 <label for="javascript">javascript news</label>
-
+                <br>
                 <label>Newsletter format</label>
+                <br>
                 <input type="radio" id="format" name="format">
-
+                <br>
                 <label for="topics">other topics you'd like to hear about</label>
+                <br>
                 <textarea id="topics" name="topics"></textarea>
 
                 <button type="submit">sign up</button>
                 <h3>copyright the code review</h3>
 
-            </fieldset>
+           <!-- </fieldset>-->
 
         </form>
     </section>
