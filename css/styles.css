@@ -18,25 +18,62 @@ a{
 #banner {
     background-color: aqua;
     width: 100%;
+    margin-bottom: 25px;
 }
 .publication {
-    margin: 40px auto;
+    margin: 15px auto;
 }
 
 .top-sec {
     flex-direction: column;
+    padding-bottom: 0;
     
 }
-input {
+.form1 {
+    margin 0 5%;
+    width: 100%;
+}
+.form2 {
+    margin 0 5%;
+    width: 100%;
+}
+input, select {
     width: 90%;
-    margin: 0 5% 0;
+    margin: 15px 5%;
+    padding: 15px;
 }
-.top-sec {
+input::placeholder {
+    text-align: right;
+}
+.zip {
+    width: 40%;
+}
+h2, .top-sec {
     margin: auto;
 }
-h1,
+h2 {
+    margin-bottom: 10px;
+}
 p {
-    margin: auto;
+    margin: 3px 5%;
+    padding-bottom: 40px;
+    text-align: center;
+    border-bottom: solid 3px black;
+}
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 5% 20px;
+    padding-top: 25px;
+    border-top: solid 2px black;
+    width: 90%;
+}
+label {
+    margin: 5px 5% 5px;
+}
+
+.bot-sec {
+    margin: 0 5%;
 }
 
 /*-----------------------------------------------------------------

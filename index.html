@@ -19,11 +19,11 @@
         <h1 class="publication">the code review</h1>
     </header>
     <div class="top-sec">
-        <h1>signup for our newsletter</h1>
+        <h2>signup for our newsletter</h2>
         <p>get the latest news on how your code is doing right in your inbox</p>
     </div>
     <section class="mid-sec">
-        <form action="/index.html" method="post">
+        <form class="form1" action="/index.html" method="post">
                       
             <!--<fieldset>-->
                 <legend>Contact Information</legend>
@@ -38,7 +38,7 @@
                 <br>
                 <label for="phone">phone number</label>
                 <br>
-                <input type="number" id="phone" name="phone_number">
+                <input type="tel" id="phone" name="phone_number">
                 <br>
                 <label for="address">street address</label>
                 <br>
@@ -50,9 +50,9 @@
                 <br>
                 <label for="state">state</label>
                 <br>
-                <select id="state" name="state_name" placeholder="Select State">
-                    <optgroup label="select state">
-                        <option selected disabled hidden value="california">Select State</option>
+                <select id="state" name="state_name" placeholder="Choose State">
+                    <optgroup label="Choose State">
+                        <option selected disabled hidden value="california">Choose State</option>
                         <option value="california">California</option>
                         <option value="florida">Florida</option>
                         <option value="washington">Washington</option>
@@ -61,7 +61,7 @@
                 <br>
                 <label for="zip">zip code</label>
                 <br>
-                <input type="number" id="zip" name="postal_code">
+                <input type="number" id="zip" name="postal_code" class="zip">
            <!--</fieldset>-->
 
         </form>
@@ -69,7 +69,7 @@
     </section>
 
     <section class="bot-sec">
-        <form action="/index.html" method="post">
+        <form class="form2" action="/index.html" method="post">
 
            <!--- <fieldset>-->
                 <legend>newsletter</legend>
