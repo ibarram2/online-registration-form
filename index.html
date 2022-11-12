@@ -9,101 +9,95 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
 
+    
 </head>
 <body>
-   <div class="wrapper">
+    <div class="wrapper">
 
-    <header id="banner">
-        <h1 class="publication">the code review</h1>
-    </header>
-    <div class="top-sec">
-        <h2>signup for our newsletter</h2>
-        <p>get the latest news on how your code is doing right in your inbox</p>
-    </div>
-    <section class="mid-sec">
-        <form class="form1" action="/index.html" method="post">
-                      
-            <!--<fieldset>-->
-                <legend>Contact Information</legend>
-                <br>
-                <label for="fname">Full Name</label>
-                <br>
-                <input type="text" id="fname" name="full_name" placeholder="Required">
-                <br>
-                <label for="email">email address</label>
-                <br>
-                <input type="email" id="email" name="email_address" placeholder="Required">
-                <br>
-                <label for="phone">phone number</label>
-                <br>
-                <input type="tel" id="phone" name="phone_number">
-                <br>
-                <label for="address">street address</label>
-                <br>
-                <input type="text" id="address" name="street_address">
-                <br>
-                <label for="city">city</label>
-                <br>
-                <input type="text" id="city" name="city_name">
-                <br>
-                <label for="state">state</label>
-                <br>
-                <select id="state" name="state_name" placeholder="Choose State">
-                    <optgroup label="Choose State">
-                        <option selected disabled hidden value="california">Choose State</option>
-                        <option value="california">California</option>
-                        <option value="florida">Florida</option>
-                        <option value="washington">Washington</option>
-                    </optgroup>
-                </select>
-                <br>
-                <label for="zip">zip code</label>
-                <br>
-                <input type="number" id="zip" name="postal_code" class="zip">
-           <!--</fieldset>-->
+        <header id="banner">
+            <h1 class="publication">the code review</h1>
+        </header>
 
-        </form>
+        <div class="top-sec">
+            <h2>signup for our newsletter</h2>
+            <p>get the latest news on how your code is doing right in your inbox</p>
+        </div>
 
-    </section>
+        <!--<section class="mid-sec">-->
+            <form class="form1" action="/index.html" method="post">
+                        
+                <fieldset class="form1">
+                    <legend>contact information</legend>
+                    
+                    <label for="fname">Full Name</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" placeholder="Required">
+                    <br>
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Required">
+                    <br>
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone">
+                    <br>
+                    <label for="address">Street Address</label>
+                    <br>
+                    <input type="text" id="address" name="address">
+                    <br>
+                    <label for="city">City</label>
+                    <br>
+                    <input type="text" id="city" name="city">
+                    <br>
+                    <label for="state">State</label>
+                    <br>
+                    <select id="state" name="state_name" placeholder="Choose State">
+                        <optgroup label="Choose State">
+                            <option selected disabled hidden value="placeholder">Choose State</option>
+                            <option value="california">california</option>
+                            <option value="florida">florida</option>
+                            <option value="washington">washington</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label for="zip">zip code</label>
+                    <br>
+                    <input type="number" id="zip" name="zip" class="zip">
+                </fieldset>
+                <fieldset class="form2">
+                    <legend>newsletter</legend>
 
-    <section class="bot-sec">
-        <form class="form2" action="/index.html" method="post">
+                    <span>Select the newletters you would like to receive</span>
+                    <br>
+                    <input type="checkbox" id="html" name="subject_type" class="margin">
+                    <label for="html">HTML News</label>
+                    <br>
+                    <input type="checkbox" id="css" name="subject_type">  
+                    <label for="css">CSS News</label>
+                    <br>
+                    <input type="checkbox" id="javascript" name="subject_type"> 
+                    <label for="javascript">Javascript News</label>
+                    <br>
+                    <span>Newsletter format</span>
+                    <br>
+                    <input type="radio" id="html2" name="format" class="margin">
+                    <label for="html2">HTML</label>
+                    <br>
+                    <input type="radio" id="plain_text" name="format">
+                    <label for="plain_text">Plain text</label>
+                    <br>
+                    <label class="topics" for="topics">Other topics you'd like to hear about</label>
+                    <textarea id="topics" name="topics"></textarea>
+                    <br>
+                    <button type="submit">Sign Up</button>
+                    <p class="copyright">copyright the code review</p>
 
-           <!--- <fieldset>-->
-                <legend>newsletter</legend>
+                </fieldset>
 
-                
-                <label>select the newletters you would like to receive</label>
-                <br>
-                <input type="checkbox" id="html" name="subject_type">
-                <br>
-                <label for="html">html news</label>
-                <br>
-                <input type="checkbox" id="css" name="subject_type">
-                <br>
-                <label for="css">css news</label>
-                <br>
-                <input type="checkbox" id="javascript" name="subject_type">
-                <br>
-                <label for="javascript">javascript news</label>
-                <br>
-                <label>Newsletter format</label>
-                <br>
-                <input type="radio" id="format" name="format">
-                <br>
-                <label for="topics">other topics you'd like to hear about</label>
-                <br>
-                <textarea id="topics" name="topics"></textarea>
-
-                <button type="submit">sign up</button>
-                <h3>copyright the code review</h3>
-
-           <!-- </fieldset>-->
-
-        </form>
-    </section>
+            </form>
+        <!--</section>-->
 
     </div>
 </body>
