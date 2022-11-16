@@ -181,5 +181,25 @@ Media Queries (768)
 ------------------------------------------------------------------*/
 @media (min-width: 768px) {
 
-
+    .wrapper {
+        margin: auto;
+    }
+    p {
+        margin: auto;
+    }
+    legend {
+        width: 100%;
+    }
+    .top-sec,
+    .form1 {
+        margin: 0 25% 3px;
+    }
+    .divinput {
+        float: right;
+    }
+    .divlabel {
+        float: left;
+        display: inline-block;
+    }
+  
 }
