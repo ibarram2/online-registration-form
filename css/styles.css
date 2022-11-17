@@ -13,19 +13,15 @@ form {
 }
 form {
     margin: 3px 5% 15px;
-    /*width: 100%;*/
 }
 fieldset {
-    /*margin: 0 5%;*/
     padding: 0;
     margin: 0;
 }
 a {
     text-decoration: none;
 }
-
 .wrapper {
-    /*width: 100%;*/
     flex-direction: column;
 }
 #banner {
@@ -38,46 +34,28 @@ a {
     margin: auto;
     color: white;
 }
-
 .top-sec {
     flex-direction: column;
     padding-bottom: 0;
     margin: 0 5%;
     border-bottom: solid 4px black;
 }
-/*.mid-sec {
-    margin: 5px 5% 15px;
-    border-top: solid 2px black;
-}*/
 .bot-sec {
     margin: 0 5%;
     border-top: solid 2px black;
 }
-/*.form1 {
-    margin 0 5%;
-    wdth: 100%;
-    margin: 5px 5% 15px;
-}*/
 input, select {
     margin: 10px 0 15px;
     padding: 15px;
     background-color: rgba(239,240,241,255);
 }
-select,
-#fname,
-#email,
-#phone,
-#address,
-#city {
+.divinput {
     width: 100%;
 }
 input::placeholder {
     text-align: right;
     font-style: italic;
 }
-/*.form1 input {
-    width: 100%;
-}*/
 .form2 input {
     margin-right: 10px;
 }
@@ -118,33 +96,21 @@ legend {
 .margin {
     margin-top: 15px;
 }
-
 .bot-sec {
     margin: 0 5%;
 }
-/*.form2 input {
-    margin: 15px 0 5px;
-    width: 10%;
-}*/
 #javascript{
     margin-bottom: 30px;
 }
 #plain_text{
     margin-bottom: 30px;
 }
-/*.form2 label {
-    width: 100%;
-    margin: 25px 0;
-}*/
-
-
 #topics {
     width: 100%;
     background-color: rgb(235, 231, 231);
     padding: 30px;
     margin: 15px 0 25px;
 }
-
 button {
     width: 100%;
     color: white;
@@ -153,7 +119,6 @@ button {
     font-size: 1.2em;
     font-weight: bold;
 }
-
 .copyright {
     margin: 25px auto;
     text-align: center;
@@ -166,7 +131,6 @@ button {
 /*-----------------------------------------------------------------
 Flex Containers
 ------------------------------------------------------------------*/
-
 
 .wrapper,
 #banner,
@@ -181,6 +145,9 @@ Media Queries (768)
 ------------------------------------------------------------------*/
 @media (min-width: 768px) {
 
+    .flex {
+        display: Flex;
+    }
     .wrapper {
         margin: auto;
     }
@@ -195,11 +162,16 @@ Media Queries (768)
         margin: 0 25% 3px;
     }
     .divinput {
-        float: right;
+        width: 100%;
     }
     .divlabel {
-        float: left;
-        display: inline-block;
+        min-width: 162px;
     }
-  
+    .flex {
+    align-items: baseline;
+    }
+    #zip {
+    max-width: 30%;
+    min-width: 135px;
+    }
 }
