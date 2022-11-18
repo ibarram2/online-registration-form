@@ -3,9 +3,13 @@
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
 }
-
 body {
     margin: 0 auto;
+}
+input:focus, 
+select:focus,
+#topics:focus {
+    background-color: lightblue;
 }
 fieldset,
 form {
@@ -124,7 +128,7 @@ button {
     text-align: center;
     font-size: .9em;
     font-style:italic;
-    font-weight: none;
+    font-weight: 100;
     color: rgba(157,163,168,255);
 }
 
@@ -171,7 +175,7 @@ Media Queries (768)
     align-items: baseline;
     }
     #zip {
-    max-width: 30%;
+    max-width: 25%;
     min-width: 135px;
     }
 }
